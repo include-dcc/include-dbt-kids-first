@@ -1,46 +1,3 @@
-# D3b DBT Template
-
-Use this template to bootstrap a new D3b DBT repository.
-
-<!--TODO: Delete this section once all steps have been completed -->
-
-## New Repository Setup
-
-### Naming conventions
-
-DBT repositories should be named as such: `[org-name]-dbt-[project-name]`. The
-complete ADR describing the repository naming convention may be found
-[here](docs/decisions/dbt_repo_design/0001-repository-naming.md).
-
-### Setting up GitHub repository settings
-
-- [ ] Write and update the repository description
-
-#### General Settings
-
-From the main page of the repository, select the `Settings` tab. From here,
-you will be on the `General` settings page. Confirm and modify the following
-settings:
-
-- [ ] Set deafult branch to `main`
-- [ ] Under `Pull Requests:
-  - [ ] Select `Allow merge comits`
-  - [ ] Select `Allow squash merging`
-  - [ ] Select `Allow rebase merging`
-  - [ ] Select `Always suggest updating pull request branches`
-  - [ ] Select `Automatically delete head branches`
-
-#### Branch Settings
-
-Set branch protection rules for main branch. In repository settings, under
-`Code and automation`, select `Branches` and then select `Add branch ruleset`.
-Do the following:
-
-- [ ] set `Enforcement status` to active
-- [ ] Select `Require a pull request before merging`
-- [ ] Select `Block force pushes
-- [ ] Select `Save changes`
-
 ### Setting up configuration files
 
 - [ ] Update items marked by `TODO` in [`dbt_project.yml`](./dbt_project.yml).
@@ -59,10 +16,6 @@ To see an example of how dbt may be deployed at the D3B center, see the
 repository. The dbt models in that repository are configured to deploy
 [here](https://github.com/kids-first/aws-infra-jenkins-shared-libraries/blob/master/vars/dbt_study_transforms.groovy).
 
-### Documentation
-
-Documenting how to deploy the documentation site to GitHub pages is still a
-work in progress.
 
 ## Repository Description
 
@@ -73,16 +26,6 @@ Include an appropriate emoji at the start of the summary.
 Add a handful of tags that summarize topics relating to the repository.
 If the repository has a documentation site or web page, add it next to the
 repository description.
-
-## Quick start
-
-Documentation for running your first models against the D3B warehouse can be
-found in the [`docs`](docs/quickstart/README.md)
-
-## Architecture Decision Records
-
-Architecture Decision Records provide a record of key decisions and can be
-found and added to in [`docs/decisions`](docs/decisions/README.md).
 
 ## Important information
 

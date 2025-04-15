@@ -8,7 +8,7 @@ verbose = 1
 [sqlfluff:templater:dbt]
 project_dir = .
 # TODO: change this to be the profile set in dbt_project.yml
-profile = d3b_template_dbt_project
+profile = include-dbt-kids-first
 target = dev
 
 [sqlfluff:indentation]
