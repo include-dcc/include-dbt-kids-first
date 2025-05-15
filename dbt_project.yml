@@ -29,10 +29,10 @@ models:
 
 # Grant access to schemas for analyst groups and service accounts.
 # TODO: add new schemas as needed.
-on-run-end:
-  # Grant on base schema
-  - 'grant usage on schema "{{ target.schema }}" to d3b_analysts, bix_scientist_group, d3b_superuser_ro, svc_dbt, svc_dgd'
-  - 'grant select on all tables in schema "{{ target.schema }}" to d3b_analysts, bix_scientist_group, d3b_superuser_ro, svc_dbt, svc_dgd'
+# on-run-end:
+#   # Grant on base schema
+#   - 'grant usage on schema "{{ target.schema }}" to d3b_analysts, bix_scientist_group, d3b_superuser_ro, svc_dbt, svc_dgd'
+#   - 'grant select on all tables in schema "{{ target.schema }}" to d3b_analysts, bix_scientist_group, d3b_superuser_ro, svc_dbt, svc_dgd'
 
 seeds:
   quote_columns: true
